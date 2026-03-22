@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <rect width="640" height="420" rx="32" fill="#f7fbf8"/>
+  <rect x="0" y="248" width="640" height="172" fill="#dceee2"/>
+  <rect x="56" y="136" width="208" height="150" rx="18" fill="#ffffff" stroke="#d3e8da"/>
+  <rect x="80" y="164" width="160" height="92" rx="14" fill="#eaf6ee"/>
+  <rect x="116" y="104" width="90" height="40" rx="20" fill="#5bae7a"/>
+  <circle cx="436" cy="232" r="86" fill="#f8e7d6"/>
+  <ellipse cx="434" cy="220" rx="56" ry="42" fill="#fffefc"/>
+  <circle cx="416" cy="214" r="5" fill="#223127"/>
+  <circle cx="452" cy="214" r="5" fill="#223127"/>
+  <ellipse cx="434" cy="232" rx="11" ry="8" fill="#223127"/>
+  <path d="M392 164 368 126l8 48M476 164l24-38-8 48" fill="#f0c7a3"/>
+  <text x="48" y="56" fill="#223127" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700">Harbour Tails Cafe</text>
+</svg>

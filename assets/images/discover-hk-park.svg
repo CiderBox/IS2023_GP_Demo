@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <rect width="640" height="420" rx="32" fill="#dff3e8"/>
+  <rect y="286" width="640" height="134" fill="#b8dcbf"/>
+  <path d="M0 250c96-42 166-68 246-68 118 0 170 52 394 68v44H0Z" fill="#9ccab0"/>
+  <circle cx="124" cy="122" r="48" fill="#f4d98b"/>
+  <path d="M164 310h292" fill="none" stroke="#f6fbf7" stroke-width="22" stroke-linecap="round"/>
+  <ellipse cx="344" cy="252" rx="74" ry="54" fill="#fff8f2"/>
+  <circle cx="312" cy="210" r="28" fill="#fff8f2"/>
+  <circle cx="390" cy="212" r="28" fill="#fff8f2"/>
+  <ellipse cx="344" cy="252" rx="38" ry="26" fill="#cf9a69"/>
+  <circle cx="330" cy="246" r="4.5" fill="#223127"/>
+  <circle cx="358" cy="246" r="4.5" fill="#223127"/>
+  <path d="M302 198 276 160l8 46M386 198l26-38-8 46" fill="#e7b18a"/>
+  <text x="46" y="58" fill="#223127" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700">West Kowloon Paw Promenade</text>
+</svg>

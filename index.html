@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>PawPlanet Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="desktop-stage">
+    <div class="ambient-shape ambient-left"></div>
+    <div class="ambient-shape ambient-right"></div>
+
+    <div class="phone-frame">
+      <div class="phone-shell" id="phoneShell">
+        <div class="phone-viewport">
+          <header class="status-bar" aria-hidden="true">
+            <span>9:41</span>
+            <div class="status-icons">
+              <span class="status-dot"></span>
+              <span class="status-pill"></span>
+            </div>
+          </header>
+
+          <div class="offline-banner" id="offlineBanner" hidden>
+            You are offline. Local browsing still works, but live updates are paused.
+          </div>
+
+          <div class="app-scroll-region" id="appScrollRegion">
+            <main class="app-main" id="appMain">
+              <section class="view view-active" id="home" data-view="home" aria-label="Home screen"></section>
+              <section class="view" id="discover" data-view="discover" aria-label="Discover screen"></section>
+              <section class="view" id="community" data-view="community" aria-label="Community screen"></section>
+              <section class="view" id="shop" data-view="shop" aria-label="Shop screen"></section>
+              <section class="view" id="health" data-view="health" aria-label="Health screen"></section>
+              <section class="view profile-view" id="myProfile" data-view="myProfile" aria-label="My profile screen"></section>
+            </main>
+          </div>
+
+          <button class="floating-create hidden" id="contextFab" type="button" aria-label="Quick action">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 5v14M5 12h14"></path>
+            </svg>
+            <span id="contextFabLabel">Create</span>
+          </button>
+
+          <nav class="bottom-nav" id="bottomNav" aria-label="Primary navigation">
+            <button class="nav-button active" type="button" data-view-target="home">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 11.5 12 5l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"></path>
+              </svg>
+              <span>Home</span>
+            </button>
+            <button class="nav-button" type="button" data-view-target="discover">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13.5 4.5 7 14l3.5 2 6.5-9.5-3.5-2z"></path>
+                <path d="M6 18.5 4.5 20l1.5-4 2 2.5L6 18.5z"></path>
+              </svg>
+              <span>Guide</span>
+            </button>
+            <button class="nav-button" type="button" data-view-target="community">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 6h12a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H9l-4 3v-3H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"></path>
+              </svg>
+              <span>Social</span>
+            </button>
+            <button class="nav-button" type="button" data-view-target="shop">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 8h13l-1.2 6.5a2 2 0 0 1-2 1.5H9a2 2 0 0 1-2-1.6L5.5 6H3"></path>
+                <circle cx="10" cy="19" r="1.5"></circle>
+                <circle cx="17" cy="19" r="1.5"></circle>
+              </svg>
+              <span>Shop</span>
+              <span class="nav-badge" id="cartBadge" hidden>0</span>
+            </button>
+            <button class="nav-button" type="button" data-view-target="health">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 13h4l2-4 3 8 2-4h5"></path>
+              </svg>
+              <span>Care</span>
+            </button>
+            <button class="nav-button" type="button" data-view-target="myProfile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z"></path>
+                <path d="M5 20a7 7 0 0 1 14 0"></path>
+              </svg>
+              <span>Me</span>
+            </button>
+          </nav>
+
+          <section class="ai-overlay hidden" id="aiOverlay" aria-hidden="true">
+            <header class="ai-overlay-header">
+              <button class="icon-button" type="button" data-action="close-ai-overlay" aria-label="Close AI chat">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M15 18 9 12l6-6"></path>
+                </svg>
+              </button>
+              <div class="ai-overlay-copy">
+                <p>PawPlanet AI</p>
+                <h2>Pet-safe city suggestions</h2>
+              </div>
+            </header>
+            <div class="ai-overlay-thread" id="aiOverlayBody"></div>
+            <form class="ai-overlay-composer" id="aiOverlayComposer" data-form="ai-overlay">
+              <div class="ai-overlay-input-row">
+                <input id="aiOverlayInput" name="prompt" type="text" placeholder="Ask about cafes, routes, weather, or pet policies">
+                <button class="primary-button" type="submit">Send</button>
+              </div>
+            </form>
+          </section>
+
+          <section class="auth-overlay hidden" id="authOverlay" aria-hidden="true">
+            <div class="auth-overlay-body" id="authOverlayBody"></div>
+          </section>
+
+          <div class="sheet-overlay hidden" id="sheetOverlay" aria-hidden="true">
+            <button class="sheet-backdrop" type="button" data-action="close-sheet" aria-label="Close details"></button>
+            <section class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+              <div class="sheet-handle" aria-hidden="true"></div>
+              <div class="sheet-header">
+                <div>
+                  <p class="sheet-eyebrow" id="sheetEyebrow"></p>
+                  <h2 id="sheetTitle">Details</h2>
+                </div>
+                <button class="icon-button" type="button" data-action="close-sheet" aria-label="Close details">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m6 6 12 12M18 6 6 18"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="sheet-body" id="sheetBody"></div>
+            </section>
+          </div>
+
+          <div class="toast-stack" id="toastStack" aria-live="polite" aria-atomic="true"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="community-enhancements.js"></script>
+</body>
+</html>

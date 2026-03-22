@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+  <rect width="640" height="640" rx="36" fill="#eef8f1"/>
+  <rect y="430" width="640" height="210" fill="#cfe7d7"/>
+  <rect x="66" y="112" width="224" height="168" rx="22" fill="#ffffff" stroke="#d3e8da"/>
+  <rect x="92" y="136" width="174" height="112" rx="16" fill="#f8e7d6"/>
+  <ellipse cx="424" cy="388" rx="112" ry="92" fill="#ffffff"/>
+  <path d="M346 322 312 248l58 42M500 322l34-74-58 42" fill="#f0c7a3"/>
+  <circle cx="392" cy="380" r="7" fill="#223127"/>
+  <circle cx="452" cy="380" r="7" fill="#223127"/>
+  <path d="M424 394c12 0 20 8 20 18h-40c0-10 8-18 20-18Z" fill="#223127"/>
+  <path d="M352 414h-46M352 432h-40M496 414h46M496 432h40" fill="none" stroke="#223127" stroke-width="5" stroke-linecap="round"/>
+  <text x="40" y="74" fill="#223127" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700">Cozy rainy-day note</text>
+</svg>

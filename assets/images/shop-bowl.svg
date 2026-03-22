@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420">
+  <rect width="420" height="420" rx="32" fill="#f7fbf8"/>
+  <ellipse cx="210" cy="248" rx="126" ry="82" fill="#5bae7a"/>
+  <ellipse cx="210" cy="218" rx="126" ry="62" fill="#ffffff"/>
+  <ellipse cx="210" cy="218" rx="88" ry="38" fill="#d9f2e3"/>
+  <circle cx="178" cy="202" r="14" fill="#ffffff"/>
+  <circle cx="212" cy="192" r="14" fill="#ffffff"/>
+  <circle cx="244" cy="202" r="14" fill="#ffffff"/>
+  <text x="44" y="68" fill="#223127" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700">Foldable Travel Bowl</text>
+</svg>

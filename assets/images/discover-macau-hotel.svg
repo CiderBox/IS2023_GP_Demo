@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <rect width="640" height="420" rx="32" fill="#f9faf7"/>
+  <rect y="300" width="640" height="120" fill="#d9f2e3"/>
+  <rect x="96" y="118" width="224" height="188" rx="18" fill="#ffffff" stroke="#d3e8da"/>
+  <rect x="126" y="146" width="52" height="52" rx="10" fill="#eaf6ee"/>
+  <rect x="192" y="146" width="52" height="52" rx="10" fill="#eaf6ee"/>
+  <rect x="258" y="146" width="32" height="130" rx="10" fill="#f8e7d6"/>
+  <ellipse cx="464" cy="246" rx="72" ry="58" fill="#ffffff"/>
+  <circle cx="438" cy="232" r="6" fill="#223127"/>
+  <circle cx="484" cy="232" r="6" fill="#223127"/>
+  <ellipse cx="462" cy="252" rx="14" ry="9" fill="#223127"/>
+  <path d="M418 202 394 162l8 44M506 202l24-40-8 44" fill="#e7b18a"/>
+  <rect x="318" y="284" width="190" height="18" rx="9" fill="#f4d98b"/>
+  <text x="48" y="58" fill="#223127" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700">Coloane Seaside Stay</text>
+</svg>
